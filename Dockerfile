@@ -10,7 +10,5 @@ COPY index.html /usr/share/nginx/html/index.html
 # Copy the images folder into the container
 COPY images/ /usr/share/nginx/html/images/
 
-# Expose port 80 for the web server
-EXPOSE 80
-
-# Nginx runs by default, so no need for CMD
+# Expose port 8000 to the outside world
+EXPOSE 8000
